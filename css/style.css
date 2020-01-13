@@ -1,0 +1,199 @@
+
+body {
+    font-family: 'Roboto', Montserrat-Regular, sans-serif !important;
+    font-size: 12px !important;
+    margin: 0; padding: 20px;
+    background: #f2f2f2;
+    color: #666 !important;
+}
+
+h2, h3, p{
+    text-align: center;
+}
+
+a {
+	color: #9652B1;
+	cursor: pointer;
+	font-size: 18px;
+}
+a:hover {
+	color: #52B196;
+}
+
+.title_page {
+	margin-bottom: 40px;
+}
+
+input[type="text"], input[type="number"], input[type="search"] {
+    padding: 5px 5px 5px 15px; 
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+	width: 100%;
+}
+input[type="color"] {
+	padding: 0;
+	background: none;
+	border-radius: 0;
+	cursor: pointer;
+	width: 100%;
+}
+
+input[type="search"] {
+	width: auto;
+}
+
+input:hover, input:focus {
+	border-color: #a593c3 !important;
+	box-shadow: none;
+	background: #fff;
+	outline: none;
+}
+
+button {
+    padding: 5px 25px 4px 25px !important; 
+    color: #555;
+    border: 1px solid #7b5baf;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+	font-weight: bold;
+	outline: none !important;
+	border: none;
+}
+
+.content {
+    width: 1100px;
+    margin: 0 auto 50px auto;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.10);
+}
+
+#graph {
+    width: 100%;
+    height: 550px;
+    margin: 40px auto;
+}
+
+.refresh-graph {
+	width: 100%;
+}
+
+.refresh-graph  i {
+	font-size: 18px;
+	cursor: pointer;
+	float: right;
+}
+
+.table thead th {
+	font-size: 14px;
+}
+
+.table tbody tr td {
+	text-align: center;
+	font-size: 12px;
+}
+
+.table tbody tr td:first-child {
+	text-align: left;
+}
+
+.alerts {
+	position: fixed;
+	width: 800px;
+	left: 50%;
+    transform: translate(-50%, 0);
+	top: 0;
+	z-index: 20;
+	text-align: center;
+}
+
+.credits {
+	margin-top: 40px;
+}
+.credits p, .credits p a {
+	margin: 5px;
+	font-size: 13px;
+}
+
+/*accordion
+@author Tim himself */
+.ziehharmonika h3 {
+	font-size: 18px;
+	background: #f5f5f5;
+	color: #666;
+	text-align: left;
+	border-radius: 4px;
+	padding: 10px 10px 10px 25px;
+	cursor: pointer;
+	margin-top: 0;
+	margin-bottom: 9px;
+	padding-right: 40px;
+	transition: 0.25s all;
+	position: relative;
+	box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.20);
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	border-top: 3px solid #8c6bc2;
+}
+.ziehharmonika h3.active {
+	background: #ddd;
+	border-top-color: #8c6bc2;
+	margin-bottom: 3px;
+}
+.ziehharmonika h3:hover {
+    border-top-color: #8c6bc2;
+    background: #ddd;
+}
+.ziehharmonika h3::before {
+	content: attr(data-prefix);
+	font-size: 16px;
+	margin-right: 9px;
+}
+.ziehharmonika h3.alignLeft {
+	padding-left: 35px;
+}
+.ziehharmonika > div {
+	display: none;
+	text-align: left;
+	padding: 20px 20px 40px 20px;
+    border: 1px solid #b5a9c8;
+    box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.20);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.ziehharmonika .arrowDown {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 16.5px 0px 13.5px;
+	border-color: #ddd transparent transparent transparent;
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	top: 37px;
+	transition: 0.25s all;
+	opacity: 0;
+}
+.ziehharmonika .active .arrowDown {
+	bottom: -13px;
+	border-color: #ddd transparent transparent transparent;
+	opacity: 1;
+}
+.ziehharmonika .collapseIcon {
+	position: absolute;
+	right: 20px;
+	top: 45%;
+	font-size: 25px;
+	font-weight: 300;
+	-ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
+}
+.ziehharmonika .collapseIcon.alignLeft {
+	right: initial;
+	left: 20px;
+}
