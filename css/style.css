@@ -51,40 +51,55 @@ ul li {
 	padding: 0;
 }
 
-#barra_sup ul li button.btn-navigation {
+#barra_sup button.btn-navigation {
 	padding: 4px 10px 4px 10px;
 	background: none;
 	font-size: 16px;
-	color: #878586;
-	transition: 0.4s;
+	color: #afafaf;
+	transition: 0.2s;
 }
 
-#barra_sup ul li button.btn-navigation:hover {
+#barra_sup button.btn-navigation:hover {
 	background: #eee;
-	transition: 0.4s;
+	transition: 0.2s;
 	color: #676566;
 }
+#barra_sup button.btn-navigation i {
+	transition: 0.4s;
+}
+#barra_sup button.btn-navigation:hover > i {
+	transition: 0.4s;
+	transform:rotate(360deg);
+}
+
 
 #barra_sup .url {
 	width: 600px;
 	float: left;
 	margin-left: 5px;
 	border-left: 1px solid #ddd;
+	transition: 0.2s;
+}
+#barra_sup .url:hover {
+	transition: 0.2s;
+	width: 800px;
 }
 
 #barra_sup .url input {
-	width: 100%;
+	width: 90%;
 	border: 0 none;
 	border-radius: 4px;
 	padding: 5px 5px 5px 15px;
-	margin: 2px 0 2px 5px;
+	margin: 0 0 0 5px;
 	outline: none;
+	transition: 0.2s;
 }
+
 
 #barra_sup .url input:hover {
 	background-color: #eee;
 	box-shadow: -1px 2px 4px 0px rgba(0,0,0,0.15);
-	transition: 0.4s;
+	transition: 0.2s;
 }
 
 #barra_inf {
