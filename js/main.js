@@ -5,7 +5,6 @@ $(document).ready(function(){
     var hBarraInf = $("#barra_inf").height();
     var hIframe = hWindow - hBarraSup - hBarraInf;
     $("#browser").height(hIframe);
-    $("#browser").load("https://www.google.com/");
 });
 
 

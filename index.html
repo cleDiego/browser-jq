@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/datatables.css" />
     <link rel="stylesheet" type="text/css" href="./css/btnswitch.css" />
     <link rel="stylesheet" type="text/css" href="./css/util.css" />
-    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome-5.12.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
 </head>
@@ -22,21 +22,25 @@
 <body>
     <div class="alerts" id="alerts"></div>
     <div id="barra_sup">
-        <div class="row">
-            <div class="col-2">
-                <button class="btn"><i class="fa fa-arrow-left"></i></button>
-                <button class="btn"><i class="fa fa-arrow-right"></i></button>
-                <button class="btn"><i class="fa fa-home"></i></button>
-            </div>
-            <div class="col-4">
-                tabs
-            </div>
-            <div class="col-4">
-                <input type="text" value="http://200.195.205.169/mannesoft/sistema.php?ACAO=publico/caixa_de_trabalho.php" />
-            </div>
-            <div class="col-2">
-                
-            </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <button class="btn-navigation"><i class="fas fa-chevron-left"></i></button>
+                </li>
+                <li>
+                    <button class="btn-navigation"><i class="fas fa-chevron-right"></i></button>
+                </li>
+                <li>
+                    <button class="btn-navigation"><i class="fas fa-home"></i></button>
+                </li>
+                <li>
+                    <button class="btn-navigation"><i class="fas fa-redo-alt"></i></button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="url">
+            <input type="text" id="input-url" class="input-url" value="http://200.195.205.169/mannesoft/sistema.php?ACAO=publico/caixa_de_trabalho.php"/>
         </div>
         
     </div>
