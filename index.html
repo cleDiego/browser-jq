@@ -21,9 +21,30 @@
 
 <body>
     <div class="alerts" id="alerts"></div>
-    <h2 class="title_page">Pareto</h2>
-    <div class="content">
+    <div id="barra_sup">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn"><i class="fa fa-arrow-left"></i></button>
+                <button class="btn"><i class="fa fa-arrow-right"></i></button>
+                <button class="btn"><i class="fa fa-home"></i></button>
+            </div>
+            <div class="col-4">
+                tabs
+            </div>
+            <div class="col-4">
+                <input type="text" value="http://200.195.205.169/mannesoft/sistema.php?ACAO=publico/caixa_de_trabalho.php" />
+            </div>
+            <div class="col-2">
+                
+            </div>
+        </div>
         
+    </div>
+    <div class="content">
+        <iframe id="browser" class="browser" src="http://200.195.205.169/mannesoft/sistema.php?ACAO=publico/caixa_de_trabalho.php"></iframe>
+    </div>
+    <div id="barra_inf">
+
     </div>
 
 
@@ -40,7 +61,7 @@
     <script src="./js/spectrum.js"></script>
     <script src="./js/datatables.js"></script>
     <script src="./js/sweetalert.js"></script>
-    <script src="./js/pareto.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

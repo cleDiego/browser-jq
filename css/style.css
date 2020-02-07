@@ -2,9 +2,10 @@
 body {
     font-family: 'Roboto', Montserrat-Regular, sans-serif !important;
     font-size: 12px !important;
-    margin: 0; padding: 20px;
+    margin: 0; padding: 0;
     background: #f2f2f2;
-    color: #666 !important;
+	color: #666 !important;
+	overflow: hidden;
 }
 
 h2, h3, p{
@@ -30,7 +31,6 @@ input[type="text"], input[type="number"], input[type="search"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-	width: 100%;
 }
 input[type="color"] {
 	padding: 0;
@@ -64,13 +64,29 @@ button {
 }
 
 .content {
-    width: 1100px;
-    margin: 0 auto 50px auto;
-    height: auto;
-    background: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.10);
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+#barra_sup {
+	width: 100%;
+	height: 32px;
+	background: #ccc;
+	box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.20);
+}
+
+#barra_inf {
+	width: 100%;
+	height: 20px;
+	background: green;
+}
+
+#browser {
+	width: 100%;
+	height: 100%;
+	border: 0 none;
+	overflow: hidden;
 }
 
 #graph {
